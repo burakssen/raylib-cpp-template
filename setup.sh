@@ -34,7 +34,7 @@ if test -d vendor/raylib; then
 else
     echo "Add submodules"
     echo "Adding raylib submodule to vendor/raylib"
-    git submodule add https://github.com/raysan5/raylib.git vendor/raylib
+    exec git submodule add https://github.com/raysan5/raylib.git vendor/raylib
 fi
 
 cmakefile="CMakeLists.txt"
