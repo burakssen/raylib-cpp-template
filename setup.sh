@@ -57,7 +57,7 @@ set(SOURCE_DIR src)
 set(VENDOR_DIR vendor)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory("${VENDOR_DIR}/raylib")
+add_subdirectory("\${VENDOR_DIR}/raylib")
 
 file(GLOB_RECURSE SOURCE_FILES 
     "\${SOURCE_DIR}/**.cpp" 
