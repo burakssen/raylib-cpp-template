@@ -10,17 +10,18 @@ else
     PROJECT_NAME=$1
 fi
 
-if test -d .git; then
-    echo "Removing .git directory"
-    rm -rf .git
-fi
 
 echo "Creating directories"
 mkdir -p build
 mkdir -p vendor
 # mkdir -p resources # optional directory for resources
 echo "Initializing git"
-git init .
+if [ -d ".git" ]; then
+    echo "Git already initialized"
+else
+    echo "Initializing git"
+    git init .
+fi
 
 if test -e .gitignore; then
     echo ".gitignore already exists"
