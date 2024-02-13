@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 echo "Creating a new CPP Raylib project"
 
